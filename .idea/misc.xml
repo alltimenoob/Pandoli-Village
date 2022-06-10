@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mihir/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_back.xml" value="0.182" />
         <entry key="..\:/Users/mihir/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_ondemand_video_24.xml" value="0.182" />
+        <entry key="..\:/Users/mihir/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_menu.xml" value="0.182" />
         <entry key="..\:/Users/mihir/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_video.xml" value="0.182" />
       </map>
     </option>
