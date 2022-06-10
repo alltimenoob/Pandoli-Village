@@ -1,11 +1,7 @@
 package com.example.myapplication.composables.components
 
-import android.content.res.Resources
-import android.icu.text.CaseMap
-import androidx.annotation.Px
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -17,12 +13,10 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.semantics.Role.Companion.Image
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.myapplication.composables.constants.Card
+import com.example.myapplication.composables.model.Card
 
 
 @OptIn(ExperimentalMaterialApi::class)
@@ -37,7 +31,7 @@ fun SlidingCard(list: List<Card>,modifier: Modifier , content : ()->Unit){
                         .padding(20.dp,20.dp,20.dp,20.dp)
                         .fillParentMaxWidth(0.75f),
                     shape = RoundedCornerShape(25.dp),
-                    elevation = 0.dp
+                    elevation = 15.dp
                 ) {
                     SlidingCardItem(
                         image = it.getImage(),

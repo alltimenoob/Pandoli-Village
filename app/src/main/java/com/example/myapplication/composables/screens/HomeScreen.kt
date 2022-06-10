@@ -3,24 +3,21 @@ package com.example.myapplication.composables.screens
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import com.example.myapplication.ui.theme.Background
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.myapplication.R
 import com.example.myapplication.composables.components.SlidingCard
-import com.example.myapplication.composables.constants.Card
+import com.example.myapplication.composables.model.Card
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -40,9 +37,6 @@ fun HomeScreen(navController: NavController) {
                 " But all their sauces tasted same. You would not be able to tell apart a lasagna and an enchilada. " +
                 "Ambience is nice. The food is a bit overpriced given the quality.")
     )
-    var card = Card(R.drawable.news,"Shashtri Medan","The Food was good, but not great. We ordered Mexican and Italian dishes." +
-    " But all their sauces tasted same. You would not be able to tell apart a lasagna and an enchilada. " +
-            "Ambience is nice. The food is a bit overpriced given the quality.")
 
     Scaffold(topBar = {
         Box(modifier = Modifier
@@ -92,7 +86,7 @@ fun HomeScreen(navController: NavController) {
             }
 /*
         Text(
-            text= "com.example.myapplication.composables.constants.News",
+            text= "com.example.pandolivillage.composables.constants.News",
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(20.dp, 0.dp, 10.dp, 10.dp)
@@ -101,7 +95,7 @@ fun HomeScreen(navController: NavController) {
             fontSize = MaterialTheme.typography.headlineMedium.fontSize
         )
 
-        com.example.myapplication.composables.constants.News(card = card,navController)
+        com.example.pandolivillage.composables.constants.News(card = card,navController)
 
         Text(
             text= "Places",
@@ -113,7 +107,7 @@ fun HomeScreen(navController: NavController) {
             fontSize = MaterialTheme.typography.headlineMedium.fontSize
         )
 
-        com.example.myapplication.composables.constants.News(card = card,navController)
+        com.example.pandolivillage.composables.constants.News(card = card,navController)
 
         Text(
             text= "Videos",
@@ -125,7 +119,7 @@ fun HomeScreen(navController: NavController) {
             fontSize = MaterialTheme.typography.headlineMedium.fontSize
         )
 
-        com.example.myapplication.composables.constants.News(card = card,navController)
+        com.example.pandolivillage.composables.constants.News(card = card,navController)
 */
             Spacer(modifier = Modifier.size(20.dp))
         }
@@ -134,12 +128,12 @@ fun HomeScreen(navController: NavController) {
 
 /*
 @Composable
-fun com.example.myapplication.composables.constants.News(card : Card,navController: NavController){
+fun com.example.pandolivillage.composables.constants.News(card : Card,navController: NavController){
     Card(
         modifier = Modifier
             .height(200.dp)
             .padding(20.dp, 0.dp, 20.dp, 0.dp)
-            .clickable { navController.navigate("com.example.myapplication.composables.constants.News") },
+            .clickable { navController.navigate("com.example.pandolivillage.composables.constants.News") },
         shape = RoundedCornerShape(10.dp),
         elevation = 0.dp
     ){

@@ -15,11 +15,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.myapplication.composables.components.ListCard
-import com.example.myapplication.composables.constants.News
+import com.example.myapplication.composables.model.News
 import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
-import kotlin.concurrent.schedule
-import kotlin.concurrent.thread
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)

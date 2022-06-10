@@ -5,20 +5,18 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.example.myapplication.composables.constants.Card
 import com.example.myapplication.helpers.PlacesViewModel
 
 @Composable
 fun PlaceScreen(sharedViewModel: PlacesViewModel){
 
-    val place = sharedViewModel._places
+    val place = sharedViewModel.places
 
     if(place!=null) {
 

@@ -8,8 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.navigation.NavController
-import com.example.myapplication.composables.constants.News
+import com.example.myapplication.composables.model.News
 import com.example.myapplication.ui.theme.Background
 import com.google.accompanist.web.WebView
 import com.google.accompanist.web.rememberWebViewState

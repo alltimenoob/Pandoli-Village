@@ -3,7 +3,6 @@ package com.example.myapplication.composables
 import androidx.compose.animation.*
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
@@ -16,7 +15,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.example.myapplication.composables.constants.Screens
+import com.example.myapplication.composables.model.Screens
 
 // The Holder
 @Composable
@@ -33,16 +32,18 @@ fun BottomNavBar(navController: NavController,list : List<Screens>) {
 
         list.forEach{ item ->
             BottomNavItem(item = item, isSelected = item.route==currentId?.destination?.route ){
-
-                if(navController.previousBackStackEntry?.destination?.route==item.route)
-                {
-                    navController.popBackStack()
+                navController.backQueue.forEach{
+                    print(it.destination.route+" ")
                 }
-                else
-                {
-                    navController.navigate(item.route){
-                        popUpTo(Screens.Home.route)
+                println()
+
+
+                navController.navigate(item.route){
+                    popUpTo(Screens.Videos.route){
+                        saveState = true
                     }
+                    launchSingleTop = true
+                    restoreState = true
                 }
 
             }

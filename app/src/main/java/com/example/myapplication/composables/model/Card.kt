@@ -1,4 +1,4 @@
-package com.example.myapplication.composables.constants
+package com.example.myapplication.composables.model
 
 
 class Card(private var image: Int, private var title: String, private var description: String) {

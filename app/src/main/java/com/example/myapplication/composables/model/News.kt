@@ -1,4 +1,4 @@
-package com.example.myapplication.composables.constants
+package com.example.myapplication.composables.model
 
 import android.os.Build
 import androidx.annotation.RequiresApi

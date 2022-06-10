@@ -1,7 +1,7 @@
 package com.example.myapplication.composables.components
 
 
-import com.example.myapplication.composables.constants.News
+import com.example.myapplication.composables.model.News
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
