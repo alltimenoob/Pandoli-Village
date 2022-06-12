@@ -1,4 +1,4 @@
-package com.example.myapplication.composables
+package com.example.myapplication.composables.components
 
 import androidx.compose.animation.*
 import androidx.compose.foundation.*

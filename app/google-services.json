@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "203644075812",
+    "project_id": "pandolivillage",
+    "storage_bucket": "pandolivillage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203644075812:android:1afcc997bce5214399bdb1",
+        "android_client_info": {
+          "package_name": "com.example.pandolivillage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203644075812-5lq800tf306a2tqkt3ufkbcnu9339imf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABBAN4HMinswTSEUaTlz01ouUyjvnH044"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203644075812-5lq800tf306a2tqkt3ufkbcnu9339imf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

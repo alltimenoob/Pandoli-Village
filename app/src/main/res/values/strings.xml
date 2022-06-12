@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Pandoli Village</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="facebook_app_id">752746159069989</string>
+    <string name="facebook_client_token">637a34c9f11109484cbd53c031d7a3f7</string>
+    <string name="google_oauth_client_token">203644075812-5lq800tf306a2tqkt3ufkbcnu9339imf.apps.googleusercontent.com</string>
 </resources>
