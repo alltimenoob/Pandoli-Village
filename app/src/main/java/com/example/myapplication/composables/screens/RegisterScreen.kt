@@ -101,7 +101,7 @@ fun RegisterScreen(navController: NavController,auth: FirebaseAuth) {
                     .height(50.dp),
                 colors = ButtonDefaults.buttonColors(backgroundColor = Color.Black, contentColor = Color.White),
                 onClick = {
-                    if(emailId.isNotEmpty() && password.isNotEmpty() && password.length < 6)
+                    if(emailId.isNotEmpty() && password.isNotEmpty() && password.length > 6)
                     {
                         auth.createUserWithEmailAndPassword(emailId, password)
                             .addOnCompleteListener { task->
@@ -114,6 +114,9 @@ fun RegisterScreen(navController: NavController,auth: FirebaseAuth) {
                                 {
                                     isError = true
                                 }
+                            }
+                            .addOnFailureListener{
+                                println(it)
                             }
                     }
                     else

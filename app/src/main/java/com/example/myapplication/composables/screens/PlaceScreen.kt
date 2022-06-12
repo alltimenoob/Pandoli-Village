@@ -11,6 +11,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.myapplication.helpers.PlacesViewModel
 
 @Composable
@@ -44,7 +45,7 @@ fun PlaceScreen(sharedViewModel: PlacesViewModel){
                    text = place.getDescription(),
                    color = Color.Black,
                    fontWeight = FontWeight.W500,
-                   fontSize = MaterialTheme.typography.h6.fontSize,
+                   fontSize = 18.sp,
                )
                Spacer(modifier = Modifier.size(15.dp))
            }

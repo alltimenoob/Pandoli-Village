@@ -9,6 +9,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -17,6 +18,7 @@ import com.example.myapplication.composables.screens.RegisterScreen
 import com.example.myapplication.ui.theme.MyApplicationTheme
 import com.facebook.FacebookSdk
 import com.facebook.appevents.AppEventsLogger
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.google.android.gms.auth.api.identity.BeginSignInRequest
 import com.google.android.gms.auth.api.identity.Identity
 import com.google.android.gms.auth.api.identity.SignInClient
@@ -51,15 +53,20 @@ class LoginActivity : ComponentActivity() {
                     BeginSignInRequest.GoogleIdTokenRequestOptions.builder()
                         .setSupported(true)
                         .setServerClientId("203644075812-5lq800tf306a2tqkt3ufkbcnu9339imf.apps.googleusercontent.com")
-                        .setFilterByAuthorizedAccounts(true)
+                        .setFilterByAuthorizedAccounts(false)
                         .build())
-                .setAutoSelectEnabled(true)
+                .setAutoSelectEnabled(false)
                 .build()
 
             val auth = Firebase.auth
 
             setContent{
-                MyApplicationTheme{
+                    val systemUiController = rememberSystemUiController()
+
+                    systemUiController.setSystemBarsColor(
+                        color = Color.White
+                    )
+
                     val navController = rememberNavController()
 
                     NavHost(navController = navController , startDestination = "Login"){
@@ -71,7 +78,6 @@ class LoginActivity : ComponentActivity() {
                         }
                     }
 
-                }
             }
         }
     }

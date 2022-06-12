@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -23,6 +24,7 @@ import com.example.myapplication.composables.screens.*
 import com.example.myapplication.helpers.PlacesViewModel
 import com.example.myapplication.helpers.VideosViewModel
 import com.example.myapplication.ui.theme.MyApplicationTheme
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 
 class MainActivity : ComponentActivity() {
@@ -34,8 +36,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
+                val systemUiController = rememberSystemUiController()
 
-            MyApplicationTheme {
+                systemUiController.setSystemBarsColor(
+                    color = Color.White
+                )
 
                 val navController = rememberNavController()
 
@@ -89,7 +94,7 @@ class MainActivity : ComponentActivity() {
                     }
                 }
 
-            }
+
 
         }
     }
