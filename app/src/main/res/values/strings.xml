@@ -12,4 +12,5 @@
     <string name="facebook_app_id">752746159069989</string>
     <string name="facebook_client_token">637a34c9f11109484cbd53c031d7a3f7</string>
     <string name="google_oauth_client_token">203644075812-5lq800tf306a2tqkt3ufkbcnu9339imf.apps.googleusercontent.com</string>
+    <string name="database_address">https://apibymhiir.000webhostapp.com/</string>
 </resources>

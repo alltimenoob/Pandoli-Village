@@ -7,12 +7,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:203644075812:android:1afcc997bce5214399bdb1",
+        "mobilesdk_app_id": "1:203644075812:android:229517f47a37f1bd99bdb1",
         "android_client_info": {
-          "package_name": "com.example.pandolivillage"
+          "package_name": "com.mihir.pandolivillage"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "203644075812-raq8e7us3ls5qjeb8p3higieuphn41t7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mihir.pandolivillage",
+            "certificate_hash": "30f76e144c4025b6585c7a6bab5e430abc036169"
+          }
+        },
         {
           "client_id": "203644075812-5lq800tf306a2tqkt3ufkbcnu9339imf.apps.googleusercontent.com",
           "client_type": 3
